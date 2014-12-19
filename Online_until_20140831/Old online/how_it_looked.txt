@@ -1,0 +1,38 @@
+Index of /aiswaryakolisetty.com/
+Name	Size	Date Modified
+[parent directory]		
+Aiswarya.jpg	60.8 kB	4/13/14 9:08:00 PM
+NewSite_VisualDesign/		2/26/13 12:00:00 AM
+accordion.html	2.7 kB	4/13/14 9:08:00 PM
+ade.html	4.6 kB	2/27/13 12:00:00 AM
+allstateapp.html	4.6 kB	2/27/13 12:00:00 AM
+aura.html	4.6 kB	2/27/13 12:00:00 AM
+autodesk.html	3.1 kB	4/13/14 9:08:00 PM
+background.png	240 B	4/13/14 9:08:00 PM
+background_old.png	113 B	4/13/14 9:08:00 PM
+blog.html	9.1 kB	4/13/14 9:08:00 PM
+blog_style.css	8.1 kB	4/13/14 9:08:00 PM
+bowtie.html	4.6 kB	2/27/13 12:00:00 AM
+cqs.html	4.6 kB	2/27/13 12:00:00 AM
+doug.html	4.6 kB	2/27/13 12:00:00 AM
+favicon.gif	0 B	3/6/13 12:00:00 AM
+favicon.ico	0 B	3/6/13 12:00:00 AM
+glisse.css	3.0 kB	4/13/14 9:08:00 PM
+glisse.js	30.0 kB	4/13/14 9:09:00 PM
+hfid.html	5.3 kB	4/13/14 9:09:00 PM
+index.html	4.6 kB	2/27/13 12:00:00 AM
+jquery.js	90.5 kB	2/27/13 12:00:00 AM
+lockcracker.html	4.6 kB	2/27/13 12:00:00 AM
+myndr.html	4.6 kB	3/3/13 12:00:00 AM
+photography.html	3.1 kB	4/13/14 9:09:00 PM
+script.js	306 B	4/13/14 9:09:00 PM
+style.css	2.7 kB	4/13/14 9:09:00 PM
+stylesheet.css	8.2 kB	4/13/14 9:09:00 PM
+suffrage.html	4.7 kB	3/3/13 12:00:00 AM
+sustainability.html	4.7 kB	2/27/13 12:00:00 AM
+tesla.html	4.6 kB	2/27/13 12:00:00 AM
+tesla_ui.html	4.6 kB	2/27/13 12:00:00 AM
+teslatest.html	2.9 kB	4/13/14 9:09:00 PM
+teslaui.html	3.2 kB	4/13/14 9:09:00 PM
+uocd.html	4.6 kB	2/27/13 12:00:00 AM
+work.html	8.5 kB	3/3/13 12:00:00 AM

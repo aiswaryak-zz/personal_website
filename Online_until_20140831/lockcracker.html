@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Aiswarya Kolisetty</title>
+  <link rel="stylesheet" type="text/css" href="http://code.jquery.com/ui/1.9.1/themes/base/jquery-ui.css">
+  <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type = "text/javascript" src="script.js"></script>
+  <!--<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"> -->
+
+
+ 
+</head>
+<body>
+
+
+  <div id='cssmenu'>
+<ul>
+   <li><a href='index.html'><span>About</span></a></li>
+   <li class='active'><a href='work.html'><span>Work</span></a></li>
+   <li><a href='blog.html'><span>Thoughts</span></a></li>
+   <li class='last'><a href='photography.html'><span>Photography</span></a></li>
+</ul>
+</div>
+
+
+
+    <div class="topbar">
+      <p><a href="work.html" class="project-button-work"> &larr; All Projects</a></p>
+      <p><a href="teslatest.html" class="project-button-next">Next &rarr;</a></p>
+      </div>
+
+		<div class="right" style="height:1770px; padding-top:0px">
+
+
+      <div class="work-text">
+
+			<div class= "work-header"><h2><i>Lockcracker</i> : A mechatronic system</h2></div>
+			<div class="work-header"><h3> Our youtube <a href ="http://youtu.be/Bu7JPcSLYCI">video </a>has over 100,000 views </h3></div>
+
+
+      <div id="photo-div" style="float:right; height:200px; margin-top:20px"><img src="Work/lockcracker/lockcracker_full.png"/></div> 
+      <h4> The Context </h4>
+
+
+			<p>The purpose of this project was to get a multi-disciplinary introduction to the principles of engineering.  The class is taken in sophomore year and a team of mechanical, electrical, and computer engineers is tasked with making a mechatronic device with a PIC microcontroller.  Team JARJ decided to build a lock-cracking device. </p>
+
+      <p>More about the project <a href = "http://olinprojects.com/projects/51889acbe885afce55818c22">here</a>.</p>
+
+      <h4> The Project </h4>
+      <p> The LockCracker can take a combination lock (used on high school lockers) with an unknown combination and unlock it in less than 3 hours.  The combination is displayed on a GUI on a laptop.</p>
+
+      <p> Team JARJ figured out a mechatronic system that could mecahnical turn the lock dial, try the minimum necessary combinations, and pull the latch at the correct combination. </p>
+
+      <p style = "margin-left:200px;"><iframe width="420" height="315" margin-left="200" src="http://www.youtube.com/embed/Bu7JPcSLYCI" frameborder="0" allowfullscreen></iframe></p>
+
+      <h4> The Process </h4>
+
+      <div id="photo-div" style="float:right; height:300px; margin-top:20px"><img src="Work/lockcracker/gui_full.jpg"/></div> 
+      
+      <p>The system is started from a GUI that lets a user input any of the numbers in the combination that they already know (the algorithm differs based on that).  The lock dial is spinned in the 3 directions needed to open a lock and every combination is tried in brute-force fashion.  With each new combination, the lock latch is pulled.  When the latch finally opens, the system stops and displays the final combination to the user.  Please watch this <a href ="http://youtu.be/Bu7JPcSLYCI">video </a> of the LockCracker in action.  </p>
+
+
+        <p>Our team divided up the work into 3 parts - a mechanical system, an electrical system, and a software system.  The following describes what components and actions are on the prototype</p>
+
+
+      <ul style="margin-left:60px">
+        <li> Stepper motor: to turn the lock dial </li>
+        <li> Pull-in solenoid: Pull the lock's latch every time a combination is tried;</li>
+        <li>Limit switch: to trigger only when the latch is opened, telling the system to stop trying further combinations and display the final combination to the user; </li>
+        <li> PIC microcontroller: brains behind the controls of the other components (when to turn dial, when to pull the latch, etc.); </li>
+        <li> Python GUI - Allow the user to start the LockCracker, to display end result;</li>
+        <li> Python back-end- change strategy based on how many numbers the user already knows, modular to fit any type of lock dial.</li>
+      </ul>
+
+      <p> More about the project <a href = "http://olinprojects.com/projects/51889acbe885afce55818c22">here</a>.</p>
+
+      
+      
+      <h4> The Reflection </h4>
+      <p>The LockCracker has recieved publicity in technology media including Wired.com, Popsci.com, Hackaday.com, ASME Magazine, and more.  Our team is very proud of our work together. 
+
+    <div id="photo-div" style="float:center; height:250px; margin-top:20px"><img src="Work/lockcracker/team.jpg"/></div> 
+      
+      </p>
+
+     
+</div>
+ 
+</body>
+</html>

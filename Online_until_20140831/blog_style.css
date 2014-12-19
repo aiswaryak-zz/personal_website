@@ -1,0 +1,442 @@
+@import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+
+body{
+	font:'Lato', sans-serif;
+	color: #4f4f4f;
+	background-image:url('background.png');
+}
+
+a, a:visited {
+	outline:none;
+	color:#389dc1;
+}
+
+a:hover{
+	text-decoration:none;
+}
+
+section, footer, header, aside{
+	display: block;
+}
+
+li {
+	list-style-type: square;
+}
+
+
+/*----------------------------
+	Headings
+-----------------------------*/
+
+
+h1{
+	font: 14px 'Lato', sans-serif;
+	text-transform:uppercase;
+	margin-bottom: 24px;
+}
+
+h2{
+	font: 48px 'Lato', serif;
+}
+
+h3{
+	font: 34px 'Lato', serif;
+	color:#3b3b3d;
+}
+
+h1 a, h2 a{
+	color:#4f4f4f !important;
+	text-decoration: none !important;
+}
+
+
+/*----------------------------
+	Content & Posts
+-----------------------------*/
+#content_text{
+	
+	margin-left:80px;
+	font-weight:400;
+	font-size:15px;
+	position:relative;
+	width:80%;
+
+}
+
+#content{
+	/*
+	position: absolute;
+	font: 16px/1.5 'Gentium Book Basic' serif;
+	width: 580px;
+	
+	margin-left: 400px;
+	*/
+	position: relative;
+	float: center;
+	margin-left:250px;
+	margin-top: 80px;
+	padding-top:10px;
+	width: 70%;
+	
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
+	border-radius:10px;
+}
+
+#content p,
+#content ul{
+	margin-bottom:25px;
+}
+
+#content ul{
+	padding-left:20px;
+}
+
+#content li{
+	margin-bottom:5px;
+}
+
+#content div.actions{
+	margin-top:25px;
+	font-size:14px;
+	font-family:'Open Sans Condensed', sans-serif;
+}
+
+#content div.actions .readmore{
+	text-decoration: none !important;
+	padding:0 2px;
+}
+
+#content div.actions .readmore:hover{
+	background-color:#389dc1;
+	color:#fff;
+}
+
+#content div.actions .comments{
+	color:#ccc;
+	margin-left:10px;
+	text-decoration:none;
+}
+
+.post{
+	padding: 50px 0 15px 0;
+	border-bottom: 1px solid #dfdfdf;
+	font-family: 'Gentium Book Basic', serif;
+}
+
+.post .date{
+	font: bold 12px 'Lato', serif;
+	text-transform: uppercase;
+	color:#d9401e;
+	margin: 24px 0 30px 20px;
+	position: relative;
+}
+
+.post .date:before{
+	color:#d9401e;
+	width:18px;
+	height:18px;
+	position:absolute;
+	content:'';
+	left: -22px;
+	top: -1px;
+	background:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDoyNjZDQjA1OTM1ODZFMjExQUUwM0IwQzQwMjlEOTczMyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpENjYzQjI4QjhCNDYxMUUyQjNENkFGQ0NCRUExRDM1NSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpENjYzQjI4QThCNDYxMUUyQjNENkFGQ0NCRUExRDM1NSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IFdpbmRvd3MiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4NjA1NUJCNzUzOEFFMjExQUUwM0IwQzQwMjlEOTczMyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDoyNjZDQjA1OTM1ODZFMjExQUUwM0IwQzQwMjlEOTczMyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PhTXJRoAAADXSURBVHjaYvz//z8DNQDL7t27sYmDTGfEoQdDztXVlYEJyg4B4rdA/AGLJhjGJgfS4wfiwAyaCcRCQMwGxMxQMTY0jdjkQHqmwQzihwqAACcQ50CdXoRmEC45aXAYYQmDCVDMQIocskGMZEbYB+QwQokBEAaCzch8dDF0wMRAJcC4a9cufqjzYF7bTKReX5jXgC4UYMHiNbACYEJ9AaQkkL2BLIaekIeA15AUbEZiM+ARo67XQAZ9BOJ3eFxGSOwFcspOBOLnoBgh0SEgQ+LAgU2tgg0gwACqTkAIjemp4gAAAABJRU5ErkJggg==')
+}
+
+
+/*----------------------------
+	The left bar
+-----------------------------*/
+
+
+aside{
+	position: fixed;
+	width: 250px;
+	height: auto;
+	top: 0;
+	left: 50%;
+	bottom: 0;
+	margin-left: -460px;
+	padding-top: 65px;
+}
+
+aside p.description{
+	font-size: 13px;
+	line-height: 1.8;
+	margin-bottom: 40px;
+	color:#787878;
+}
+
+aside ul{
+	font: bold 18px 'Open Sans Condensed', sans-serif;
+	text-transform: uppercase;
+	list-style:none;
+}
+
+aside ul li a{
+	text-decoration:none !important;
+	display:inline-block;
+	padding:0 3px;
+	margin:2px 0 2px 10px;
+}
+
+aside ul li a:hover{
+	background-color:#389dc1;
+	color:#fff;
+}
+
+aside p.author{
+	position: absolute;
+	bottom: 20px;
+	height: 30px;
+	font-size: 12px;
+	color: #888;
+}
+
+
+/*----------------------------
+	Pagination buttons
+-----------------------------*/
+
+
+.pagination-arrow{
+	display: inline-block;
+	font: bold 16px/1 'Open Sans Condensed', sans-serif;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin: 20px 15px;
+	color: #555 !important;
+	padding: 8px 12px;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.pagination-arrow.newer{
+	padding-left: 20px;
+}
+
+.pagination-arrow.older{
+	padding-right: 20px;
+	float:right;
+}
+
+.pagination-arrow.newer:before,
+.pagination-arrow.older:before{
+	content: '';
+	border: 5px solid #555;
+	border-color: transparent #555 transparent transparent;
+	width: 0;
+	height: 0;
+	position: absolute;
+	left: 3px;
+	top: 12px;
+}
+
+.pagination-arrow.older:before{
+	left:auto;
+	right:3px;
+	border-color: transparent transparent transparent #555;
+}
+
+
+/*----------------------------
+	The 404 page
+-----------------------------*/
+
+
+.message{
+	padding-top:50px;
+}
+
+.message h1{
+	font-size:36px;
+	margin-bottom: 18px;
+}
+
+.message p{
+	font-size:13px;
+}
+
+.center{
+	text-align:center;
+}
+
+
+/*----------------------------
+	Media queries
+-----------------------------*/
+
+
+@media all and (max-width: 1024px) {
+	aside{
+		left: 5%;
+		margin-left: 0;
+		width: 25%;
+	}
+
+	#content{
+		left: 35%;
+		margin-left: 0;
+		width: 60%;
+	}
+}
+
+@media all and (max-width: 840px) {
+
+	h2{
+		font-size:36px;
+	}
+
+	aside{
+		margin-left: 0;
+		position: static;
+		width: 90%;
+		padding: 5% 5% 0 5%;
+		text-align: center;
+	}
+
+	aside .description{
+		margin-bottom: 25px;
+	}
+
+	aside li {
+		display: inline-block;
+	}
+
+	aside ul{
+		text-align: center;
+	}
+
+	aside .author{
+		display: none;
+	}
+
+	#content{
+		position: static;
+		padding: 5%;
+		padding-top: 0;
+		width: 90%;
+	}
+}
+
+
+/* NAVIGATION BAR */
+
+
+#cssmenu {
+  background: #d9401e;
+  width: 600px;
+  margin-left:400px;
+
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+}
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: inline-block;
+  zoom: 1;
+
+}
+#cssmenu ul:after {
+  content: ' ';
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+#cssmenu ul li {
+  float: left;
+  display: block;
+  padding: 0;
+}
+#cssmenu ul li a {
+  color: #fcf9fc;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  	font-family: 'Lato', sans-serif;
+	font-weight:400;
+  text-transform: uppercase;
+  font-size: 16px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+#cssmenu ul li a:hover {
+  color: #3b3b3d;
+}
+#cssmenu ul li a:hover:before {
+  width: 100%;
+}
+#cssmenu ul li a:after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 20px;
+  height: 6px;
+  width: 6px;
+  background: #fcf9fc;
+  opacity: .5;
+}
+#cssmenu ul li a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #3b3b3d;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+#cssmenu ul li.last > a:after,
+#cssmenu ul li:last-child > a:after {
+  display: none;
+}
+#cssmenu ul li.active a {
+  color: #3b3b3d;
+}
+#cssmenu ul li.active a:before {
+  width: 90%;
+  position:center;
+}
+@media screen and (max-width: 768px) {
+  #cssmenu ul li {
+    float: none;
+  }
+  #cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #cssmenu ul li a:after {
+    display: none;
+  }
+  #cssmenu ul li a:before {
+    height: 1px;
+    background: #fcf9fc;
+    width: 100%;
+    opacity: .2;
+  }
+  #cssmenu ul li.last > a:before,
+  #cssmenu ul li:last-child > a:before {
+    display: none;
+  }
+}

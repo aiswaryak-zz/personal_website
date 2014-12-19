@@ -1,0 +1,28 @@
+Dear Sir or Madam,
+
+I would like to be considered for the Interaction Designer position at Intuit.  As an annual user of TurboTax and an occasional user of Mint, I admire Intuit for tackling the area of personal finance. These tools have saved me a lot of confusion as I learn the habit of filing taxes and paying my bills.  And personal finance can be tricky, because well, it’s personal.  Providing tools that ease the process and emphasize the user’s agency and control over money is important; I think Mint delivers with their budget feature and Turbo Tax with their assuring UI that you are following the process correctly.    
+
+At my current job at Ford Research (close by, in Dearborn), I have created my own version of 'agile' UX development.  I produce wireframes or UI prototypes for my team every 2 weeks for connectivity features between the car and their devices. I am eager to learn how Intuit does agile development and figure out how my techniques can fit in.  After I create wireframes, I use frameworks like Bootstrap and AngularJS to quickly prototype the mockups on a browser. Now users can test on a phone, tablet, or even a vehicle screen.  
+
+ From a skills standpoint, I believe I would be a good fit for the position because:
+
+1. I am a UX designer with experience in user research, wireframing, front-end UI prototyping, usability testing, writing requirements;
+
+2. I believe in a user-driven design approach, where the needs and wants of the user base should provide a foundation for building a product;
+
+3.  My favorite part of the process is in the creative side - sketching, creating paper prototypes, interviewing users, and translating my results into digital mockups;
+
+4. I enjoy communicating my design process to project stakeholders and I strive to support my design decisions with qualitative (interviews) or quantitative (survey) data;
+
+5. I experiment with new devices, design techniques, and APIs in the market to see how they can fit into my personal and professional projects;
+
+6. I am developing my front-end development skills to prototype on my own and  know the limitations to my design;
+
+7. I am always pushing myself to learn more and provide new value to my teams and projects.
+
+You can see examples of my work at www.aiswaryakolisetty.com/work.html.  I maintain a weekly blog to consolidate life lessons and to improve my writing at www.aiswaryakolisetty.com/blog.html.    
+
+I would love the opportunity to speak with you and discuss how my skillset can help enhance the user experience of Intuit's products.
+
+Thanks,
+Aiswarya

@@ -1,0 +1,147 @@
+
+        @import url(http://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,700);
+        @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,900);
+
+
+         /* [class*="col-"] {
+          padding-top: 15px;
+          padding-bottom: 15px;
+          background-color: #eee;
+          background-color: rgba(86,61,124,.15);
+          border: 1px solid #ddd;
+          border: 1px solid rgba(86,61,124,.2);
+        }*/
+
+
+
+      .jumbotron p, .jumbotron li{
+        font-size: 18px;
+        font-family: 'Gentium Book Basic', serif;
+        font-weight:400;
+      }
+
+
+      }
+
+      .img-responsive{
+        padding-top:15px;
+        padding-bottom:15px;
+        margin: 0 auto;
+      }
+
+
+          body {
+        padding-top: 50px;
+        padding-bottom: 20px;
+        /*background-image:url('background.png');*/
+        font-family:'Lato', sans-serif;
+        font-size:15px;
+      }
+
+        .jumbotron p{
+        font-size: 18px;
+        font-family: 'Gentium Book Basic', serif;
+        font-weight:400;
+      }
+
+
+        h1, h2{
+
+          font-family:'Lato';
+          font-weight:700;
+          line-height:1;
+          margin-top:10px;
+
+        }
+
+      h3, h4, h5, h6 {
+          font-family: 'Lato';
+          font-weight: 400;
+          margin-top:10px;
+        }
+
+
+
+      .table-responsive{
+        margin-top:10px;
+        font-family: 'Lato', serif;
+        font-weight:400;
+
+      }
+
+      .navbar-inverse{
+        background-color: #3b3b3d;
+        border-color: #3b3b3d;
+
+      }
+
+
+      .navbar-inverse .navbar-nav > li > a:hover{
+        color:#d9401e;
+    }
+
+
+      .img-responsive{
+        padding-top:15px;
+        padding-bottom:15px;
+        margin: 0 auto;
+      }
+
+    @media (min-width: 768px){
+    .navbar-nav{
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+        float:none;
+    }
+
+
+      a{
+        color:inherit;
+      }
+      a:hover{
+        color:#d9401e;
+      }
+
+
+      .jumbotron ul {
+        font-size: 18px;
+        font-family: 'Gentium Book Basic', serif;
+        font-weight:400;
+
+      }
+
+
+
+    .nav-pills>li{
+      font-family: "Lato", sans-serif
+    }
+
+.nav-pills > li.active > a {
+    background-color:#d9401e;
+}
+
+.nav-pills > li.active > a:hover {
+    background-color:#d9401e;
+}
+
+
+
+
+
+
+
+
+
+/* PORTFOLIO CSS */
+
+
+.portfolio-item {
+    margin-bottom: 25px;
+}
+
+footer {
+    margin: 50px 0;
+}
+
+

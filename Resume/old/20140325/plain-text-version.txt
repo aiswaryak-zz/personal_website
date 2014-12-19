@@ -1,0 +1,76 @@
+Aiswarya P. Kolisetty
+----------------------------------------------------------
+email: aiswaryakolisetty@gmail.com
+blog/work: www.aiswaryakolisetty.com
+C: (617) 823 7803
+----------------------------------------------------------
+
+EMPLOYMENT 
+
+Ford Motor Company - Dearborn, MI (July 2013 - Present)
+On contract from Kelly Services from July 2014
+
+User Experience Research Engineer 
+
+
+-Conducting user research interviews for the next generation infotainment features
+-Designing feature prototypes using storyboards, workflows, wireframes
+-Developing prototype front-end UIs in web and embedded frameworks
+-Deploying prototypes in-vehicle for usability testing
+-Figuring out how to make an individual impact at a large company
+
+----------------------------------------------------------
+
+INTERNSHIPS 
+
+User Experience Consultant - Waltham, MA (Feb - May 2013)
+-Employed usability testing to help a start-up enhance their product UI
+
+Tesla Motors, Systems Tester for Model S - Palo Alto, CA (May - August 2012)
+-Automated 2+ hrs of manual testing per firmware release
+-Kickstarted the upgrade of the Model S testing buck to production version
+
+Tesla Motors, User Experience (side project) - Palo Alto, CA (July 2012)
+-Wireframed new designs for sections of the Model S dashboard
+-Presented top 4 user-tested paper prototypes to Tesla's UI manager
+
+IMEC, Vehicle Design Intern - Leuven, Belgium (June - August 2011)
+-Created Aura - a concept vehicle for daily commuters in European cities
+-Designed exterior, interior, and engineering specifications for Aura
+
+----------------------------------------------------------
+
+EDUCATION 
+
+Franklin W. Olin College of Engineering in Needham, MA 
+August 2009 - May 2013
+B.S. in Electrical & Computer Engineering (ECE); focus on design
+Full-tuition scholarship, GPA 3.50
+
+----------------------------------------------------------
+
+PAST PROJECTS
+
+Suffrage iOS App (January - May 2013)
+-An app for people to share the meaning of voting and elections their life. 
+-Interviewed Indian and American youth about voting and elections
+-Built personas, areas of opportunity maps, and paper prototypes of the app
+-Created a native iOS front-end prototype to show proof-of-concept
+
+Myndr iOS App: An Aid for Alzheimer's disease (Sept 2012 - May 2013)
+-Designed UI components for Myndr
+-Collaborated with patients and their caretakers in the design process
+
+Zimba, a Water Purifier in India (Sept 2012 - Jan 2013)
+-Product redesign for Zimba, a drinking-water chlorinator for the poor
+
+Human Factors Interface Design (Sept - Dec 2011)
+-Designed the UI for BOWtie, a cross-registration course planning tool
+-Process: paper prototypes, heuristic evaluations, usability tests
+-Prototype was built in HTML5, CSS, JavaScript, jQuery
+
+----------------------------------------------------------
+
+SKILLS 
+
+HTML, CSS, JavaScript, Balsamiq, Illustrator, Photoshop, AngularJS (beginner), Bootstrap, Qt/QML, C#, C
