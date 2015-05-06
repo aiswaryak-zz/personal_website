@@ -1,0 +1,106 @@
+PROCEDURES
+==========================
+HOW TO USE GIT
+
+no_proxy="fiesta.srl.ford.com,localhost,*.ford.com,oasis.pd8.ford.com" 
+all_proxy=proxyvipecc.nb.ford.com:83 
+http_proxy=http://$all_proxy 
+https_proxy=https://$all_proxy
+export no_proxy all_proxy http_proxy https_proxy
+
+*** ALWAYS DO THE FOLLOWING ORDER:  
+		PULL at the start of your session;
+		When you make edits: COMMIT -A;
+		Then PULL (to see if any others made changes meantime);
+		THEN COMMIT -A again;
+		FINALLy PUSH. 
+***
+
+1) How to set up Git
+	Download 'git' from the official git website. This will create git on your laptop and Gitlabs is the online interface. 
+	Helpful link - https://github.com/olinjs/setup
+
+2) TO ADD A NEW PROJECT
+	-Create the project online at oasis.pd8.ford.com
+	-In git cmd window on local machine, enter the following commands:
+	$git --global user.name "Aiswarya Kolisetty"
+	$git --global user.email "akoliset@ford.com"
+
+	Then, do the procedure of: add files, commit files, pull files, commit files.
+
+	To push files, create a master branch for them to be in. 
+	$git push -u origin master
+
+
+3) HOW TO CLONE A PROJECT (as a collaborator)
+
+	$git clone http://oasis.pd8.ford.com:akoliset/qt.git
+
+4) HOW TO PULL CONTENT FROM A PROJECT
+	
+	$git pull
+
+5)HOW TO PUSH MOST RECENT WORKING CODE ONLINE
+
+	$git add --all  (==> adds all my files for pushing stuff)
+	$git commit 
+		{
+			(==>inside texteditor)
+			Shift+I (to insert and put in a comment)
+			ESC or Ctrl+C (get out of insert mode)
+			:wq (w is to write, q is to quit)
+		}
+
+	((OR JUST DO $git commit -a  ==> add and commit files in one line))
+
+	$git pull (==> like svn update)
+	$git commit (commit changes again after the pull)
+		{
+			(==>inside texteditor)
+			Shift+I (to insert and put in a comment)
+			ESC or Ctrl+C (get out of insert mode)
+			:wq (w is to write, q is to quit)
+		}
+	$git push
+	$git log --oneline  (==> see comments for previous commits)
+
+
+
+
+
+
+=====================================================
+=====================================================
+
+HOW TO USE ACCUREV
+-Single repository (server) at Ford means all of us are accessing, modifying in a central location
+-All code for a single application will be in one depot
+-In user's workspace, a person has their own version of the development code. The changes they make, they push to the depot on their stream. That most recently modified code is taken from Dev --> QA --> Production 
+-Each depot has file storage and database
+-Artifacts: source code, directories, images for the app
+
+-Client side: sandbox saves the Workspace on the client's side
+-Server side: the depot is saved in Workspace Stream
+
+When client says 'I want to save the msot recent version of the workspace', the code (i.e., artifact) is stored in Depot File Storage (server side) and a version object is created in the Workspace stream (server side)
+
+Stream Hierarchy:
+PROD stream > (parent of) QA stream > Dev stream
+Snapshot stream: a code freeze on a certain version that will be used for a build
+
+Workspace label:
+CARSAdmin_DEV_akoliset
+
+OPERATIONS
+-KEEP: commit the files in your local workspace (changes still private from the other developers)
+-Then use PROMOTE: make changes public to others
+-Other developers have to UPDATE their workspace 
+-If other developers are on the same file that was changed by developer1, a MERGE is issued to integrate both
+
+-----
+Access AccuRev
+AccuRev GUI - for access
+There is plug-in for eclipse
+
+WATCH THIS TUTORIAL in 'AccuRev for Developers' TO add a new workspace to your local repository and modify and manage it:
+http://www.elearning.ford.com/courses/accurev/
