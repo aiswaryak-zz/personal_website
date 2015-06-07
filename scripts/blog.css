@@ -218,10 +218,11 @@ h6, .h6 {
 .blog-post-title {
   margin-bottom: 5px;
   font-size: 28px;
+  color: #d9401e;
 }
 .blog-post-meta {
   margin-bottom: 20px;
-  color: #999;
+  
 }
 
 

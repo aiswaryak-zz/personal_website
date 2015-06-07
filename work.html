@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="workApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,8 @@
     <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
         <script src="scripts/jquery.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
+	<script src="scripts/angular.min.js" type="text/javascript"></script>  
+	<script src="scripts/work_controller.js" type="text/javascript"></script>  
 
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -53,28 +55,12 @@
 </script>
 
 
-  <script>
-
-
-
-    $(function () {
-        $("[rel='tooltip']").tooltip();
-  
- 
-    $('.thumbnail').hover(
-        function(){
-            $(this).find('.caption').slideDown(250); //.fadeIn(250)
-        },
-        function(){
-            $(this).find('.caption').slideUp(250); //.fadeOut(205)
-        }
-    ); 
-});
-</script>
 
 
   </head>
 
+  
+  
   <body>
 
 
@@ -101,195 +87,58 @@
 
 
 <!-- Page Content -->
-    <div class="container">
+    <div class="container" ng-controller="WorkController">
       <div class = "jumbotron" style = "background-color:#ffffff; margin-top:30px">
 
         <!-- Page Header -->
         <div class="row">
             <div class="col-sm-12">
                 <h2 style="color:#3b3b3d; font-size:42px">My Work</h2>
+				<section class="os-animation" data-os-animation="fadeIn" data-os-animation-delay="0.3s">
+				<p>A documentation of the design work I'm currently engaged in, followed by what I've accomplished at internships and at college.  </p>
+				</section>
             </div>
         </div>
         <!-- /.row -->
 
+		<hr>
+		
+        <div class = "row" ng-repeat = "(tIndex,title) in titles">
+        <!--<section class="os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0s">-->
+		<div class = "col-sm-12">
+			<h3> {{title.category}}  </h3>
 
-        <div class = "row">
-        <div class = "col-sm-12">
+		<!--</section>-->
 
+           
+                          
 
-        <div class="tabbable" style = "padding-top:20px">
-          <ul class="nav nav-pills">
-            <li class="active"><a href="#tabs4-pane1" data-toggle="tab">Ongoing</a></li>
-            <li><a href="#tabs4-pane2" data-toggle="tab">Internships</a></li>
-            <li><a href="#tabs4-pane3" data-toggle="tab">College</a></li>
-          </ul>
-
-          <hr style ="padding-bottom:20px">
-
-           <section class="os-animation" data-os-animation="fadeInDown" data-os-animation-delay="0s">
-          <div class="tab-content">
-                  <div id="tabs4-pane1" class="tab-pane active">
-
-                                    <div class="row">
+                                    <div class="row" ng-repeat = "rows in chunked[tIndex]">
 									
-										<div class="col-md-4 portfolio-item">
-                                              <a href="Work/ford.html">
-                                                  <img class="img-responsive" src="Images/Ford/thumbnail-ford.png" alt="">
+										<div class="col-md-4 portfolio-item" ng-repeat = "item in rows | filter:{category:tIndex}">
+                                              <a href={{item.link}}>
+                                                  <img class="img-responsive" src={{item.thumbnail}} alt="">
                                               </a>
                                               <h3>
-                                                  <a href="Work/ford.html">Ford Motor Company</a>
+                                                  <a href={{item.link}}>{{item.title}}</a>
                                               </h3>
-                                              <p>My day job as a user-experience engineer at Ford. (July 2013 - Present)</p>
+                                              <p>{{item.description}}</p>
                                           </div>
 										  
-										  <div class="col-md-4 portfolio-item">
-                                              <a href="Work/visual-me.html">
-                                                  <img class="img-responsive" src="Images/Current/visual-me.png" alt="">
-                                              </a>
-                                              <h3>
-                                                  <a href="Work/visual-me.html">Stretching me out</a>
-                                              </h3>
-                                              <p>A visual design experiment of what my behaviors could be at their extremes</p>
-                                          </div> 
 										  
-                                          <div class="col-md-4 portfolio-item">
-                                              <a href="Work/alienship.html">
-                                                  <img class="img-responsive" src="Images/Current/alienship.png" alt="">
-                                              </a>
-                                              <h3>
-                                                  <a href="Work/alienship.html"><i>Alienship</i> web app</a>
-                                              </h3>
-                                              <p>An alerts tool for international students working in the US</p>
-                                          </div>
-                                          
+                                         
                                           
                                     </div>
+								
+					<hr>				
+			</div>
+			
+			</div>
+			
+			
+		
 									
-									<div class = "row">
-										<div class="col-md-4 portfolio-item">
-                                              <a href="Work/phrases.html">
-                                                  <img class="img-responsive" src="Images/Current/phrases.png" alt="">
-                                              </a>
-                                              <h3>
-                                                  <a href="Work/phrases.html">Things people say</a>
-                                              </h3>
-                                              <p>An experiment in hand-lettering that captures spoken or written phrases.</p>
-                                          </div>
-									</div>
-
-                  </div>
-                  <div id="tabs4-pane2" class="tab-pane">
-        <!-- Projects Row -->
-                                  <div class="row">
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/teslatest.html">
-                                              <img class="img-responsive" src="Images/Teslatest/thumbnail-teslatest.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/teslatest.html">Systems Testing</a>
-                                          </h3>
-                                          <p>Interned Tesla Motors to automate vehicle testing</p>
-                                      </div>
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/teslaui.html">
-                                              <img class="img-responsive" src="Images/Teslaui/thumbnail-teslaui.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/teslaui.html">UI Design</a>
-                                          </h3>
-                                          <p>Paper prototyped future ideas for the Model S user interface</p>
-                                      </div>
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/aura.html">
-                                              <img class="img-responsive" src="Images/Aura/aura.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/aura.html"><i>Aura</i> concept vehicle</a>
-                                          </h3>
-                                          <p>Designed a recumbent bicycle for young European commuters</p>
-                                      </div>
-                                  </div>
-
-                                <div class="row">
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/cqs.html">
-                                              <img class="img-responsive" src="Images/Cqs/thumbnail-cqs.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/cqs.html">Wireless data transfer</a>
-                                          </h3>
-                                          <p>Using a Zigbee to transfer data from a racing car to the pit lane</p>
-                                      </div>
-                                  </div>
-                  </div>
-                  <div id="tabs4-pane3" class="tab-pane">
-                    
-                                <div class="row">
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/autodesk.html">
-                                              <img class="img-responsive" src="Images/Autodesk/thumbnail-autodesk.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/autodesk.html">Engineering Capstone</a>
-                                          </h3>
-                                          <p>Worked with Autodesk Inc. to engage middle and high school students in 3D modeling and design</p>
-                                      </div>
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/myndr.html">
-                                              <img class="img-responsive" src="Images/Myndr/thumbnail-myndr.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/myndr.html"><i>Myndr</i> app</a>
-                                          </h3>
-                                          <p>Usability testing on an app targeted to people with mild memory loss</p>
-                                      </div>
-
-
-                                       <div class="col-md-4 portfolio-item">
-                                          <a href="Work/suffrage.html">
-                                              <img class="img-responsive" src="Images/Suffrage/thumbnail-suffrage.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/suffrage.html"><i>Suffrage</i> app</a>
-                                          </h3>
-                                          <p>A front-end UI in Objective-C meant to encourage young people to vote in elections</p>
-                                      </div>                           
-                                  </div>
-
-
-                                <div class="row">
-
-                                     <div class="col-md-4 portfolio-item">
-                                          <a href="Work/ade.html">
-                                              <img class="img-responsive" src="Images/Ade/thumbnail-ade.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/ade.html">Affordable design and entrepreneurship</a>
-                                          </h3>
-                                          <p>Designing an affordable water chlorinator for Calcutta's slums</p>
-                                      </div>        
-
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/hfid.html">
-                                              <img class="img-responsive" src="Images/Hfid/thumbnail_hfid.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/hfid.html"><i>BOWtie</i> website design</a>
-                                          </h3>
-                                          <p>Cross-registration tool for college students designed in a Human Factors Interface Design class</p>
-                                      </div>
-                                      <div class="col-md-4 portfolio-item">
-                                          <a href="Work/lockcracker.html">
-                                              <img class="img-responsive" src="Images/Lockcracker/thumbnail-lockcracker.png" alt="">
-                                          </a>
-                                          <h3>
-                                              <a href="Work/lockcracker.html"><i>LockCracker</i> project</a>
-                                          </h3>
-                                          <p>To unlock combination locks in under 3 hours</p>
-                                      </div>
-                                  </div>
-								  
-								  <hr>
+									
 								  <div class = "row">
 									<div class="col-md-12 portfolio-item">
                                           
@@ -298,23 +147,9 @@
                                       </div>        
 								  
 								  </div>
-                  </div>
-
-                </div><!-- /.tab-content -->
-              </div>
-              </div><!-- /.tabbable -->
-
-        </div>
-      </div>
-
-        
-
-        <!-- Projects Row -->
-        
-
-        <div> <!--jumbotron-->
-    </div>
-    <!-- /.container -->
+                
+    </div><!--jumbotron-->
+    </div><!-- /.container -->
 
 </body>
 
